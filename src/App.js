@@ -14,10 +14,12 @@ function App() {
   }
 
 
-  return (<div>
+  return (
+    <React.Fragment>
     <AddUser onAddUser={addUserHandler}/>
     <UsersList users={usersList}/>
-  </div>);
+    </React.Fragment>
+  );
 }
 
 export default App;
